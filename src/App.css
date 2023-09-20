@@ -1,0 +1,148 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 17px;
+
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+.listItem {
+    background-color: #464646;
+    border: 1px solid#000000;
+    color: #fff;
+}
+
+.listItem:hover {
+    background-color: #222;
+    cursor: pointer;
+}
+
+.listItem span {
+    margin-right: 10px;
+}
+
+.listItem span:nth-child(1) {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.listItem button {
+    margin-right: 8px;
+    color: #fff;
+}
+
+.listItem button:hover {
+    color: #222;
+}
+
+.createBtn {
+    font-weight: 500;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    color: #2c2c2c;
+}
+
+.createBtn:hover {
+    color: #fff;
+}
+
+.newUser,
+.infoBx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    z-index: 100;
+    background-color: #2c2c2ca2;
+}
+
+.newUser form {
+    background-color: #292929;
+    padding: 20px 30px;
+    border-radius: 8px;
+}
+
+.newUser form label {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100px;
+}
+
+
+.newUser form input[type=text],
+.newUser form input[type=email] {
+    margin-left: 5px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 4px 8px;
+    font-size: 16px;
+    font-weight: 400;
+
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    color: #fff;
+}
+
+.closeBtn {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.closeBtn:hover::after,
+.closeBtn:hover::before {
+    background-color: #dc3545;
+}
+
+
+
+.closeBtn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    top: 50%;
+}
+
+.closeBtn::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+    top: 50%;
+}
+
+.infoBx div {
+    background-color: #292929;
+    padding: 20px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: .05rem;
+}
+
+.infoBx div span {
+    display: block;
+}
+
+
+
